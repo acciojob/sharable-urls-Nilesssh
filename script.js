@@ -1,9 +1,8 @@
 // your code here
 
-function changeURL(url) {
+function changeURL() {
 	var url = "https://localhost:8080/";
-var name = document.getElementById("name").innerHTML;
-var year = document.getElementById("year").innerHTML;
-	console.log(name,year);
+	var name = document.getElementById("name").innerText;
+	var year = document.getElementById("year").innerText;
 	document.getElementById("url").innerHTML = `${url}?name=${name}&year=${year}`;
 }
