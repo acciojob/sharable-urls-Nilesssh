@@ -2,7 +2,8 @@
 
 function changeURL() {
 	var url = "https://localhost:8080/";
-	var name = document.getElementById("name").innerText;
-	var year = document.getElementById("year").innerText;
-	document.getElementById("url").innerHTML = `${url}?name=${name}&year=${year}`;
+	var name = document.getElementById("name").value;
+	var year = document.getElementById("year").value;
+	let abc = document.querySelector("#url");
+	abc.textContent = `${url}?name=${name}&year=${year}`;
 }
