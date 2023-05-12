@@ -5,5 +5,5 @@ function changeURL() {
 	var name = document.getElementById("name").value;
 	var year = document.getElementById("year").value;
 	let abc = document.querySelector("#url");
-	abc.textContent = `${url}?name=${name}&year=${year}`;
+	abc.textContent = `${url}${name!=""?`name=${name}`:""}${year!=""?`&year=${year}`:""}`;
 }
